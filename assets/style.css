@@ -2,6 +2,7 @@
 body{
   background-color: black;
   width:1440px ;
+  font-family: "Raleway",sans-serif;
 }
 .cabecalho{
   display: flex;
@@ -11,7 +12,7 @@ body{
   width: 1440px;
   height: 605px;
   border-bottom: 1px #33a8db solid;
-  background: linear-gradient(180deg, rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 99.99%, rgba(51, 168, 219, 0.2) 100%), url(/assets/images/banner.png);
+  background-image:  linear-gradient(180deg, rgba(0, 0, 0, .6), rgba(49, 168, 221, 0.2), rgba(0, 0, 0, 0.6)), url(/assets/images/banner.png);
 }
 .cabecalho-content{
   display: flex;
@@ -25,22 +26,29 @@ body{
   
 }
 .cabecalho-logo{
-  width: 248px;
-  height: 214px;
-  border:27px solid #00000020 ;
+  width: 228px;
+  height: 228px;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, .2);
   border-radius: 50%;
-  background: #00000020;
+  padding: 16px;
 
+}
+.cabecalho-logo img{
+  width: 100%;
+  height: 100%;
+  
 }
 .cabecalho-titulo{
    /* FALTA COLOCAR O BACKGROUND PARA DENTRO DO TEXTO ( FAZER ISSO EM CASA*/
-   background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
-
-  
+   background: -webkit-linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+   background-clip: text;
+   color: transparent;
    font-weight: 900;
    font-size: 40px;
    line-height: 46.96px;
    text-align: center;
+   text-transform: uppercase;
 }
 .cabecalho-texto{
   /* FALTA IMPORTAR A FONT-FAMILY E MODIFICAR AQUI E NO TITULO*/
@@ -53,10 +61,15 @@ body{
 .botao-inscricao{
   width: 353px;
   height: 57px;
-  padding: 19px 91px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 16px 32px;
   border: 2px solid;
-  border-image-source: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
-  color: #31A8DB;
+  background-color: transparent;
+  border-image: linear-gradient(#3BA1CD, #1572B7);
+  border-image-slice: 10;
+  border-radius: 30px;
+  color:#33A8DB;
 }
 .trilha-content{
   display: flex;
@@ -74,7 +87,7 @@ body{
   font-weight: 700;
   font-size: 32px;
   line-height: 37.57px;
-  letter-spacing: 19%;
+  letter-spacing: 4px;
   color:#33A8DB ;
   text-transform: uppercase;
 }
@@ -123,17 +136,13 @@ body{
   height: 363px;
   border: 1px 1px 1px 0px solid #33A8DB;
   border-top: 1px solid #33A8DB;
+  background-image: url(/assets/images/woman-code.png);
+  background-size: cover;
+  background-attachment: fixed;
 
 }
 
-.woman{
-  margin: 0;
-  position: relative;
-  max-height: 363px;
-  width: 1440px;
-  object-fit: cover;
 
-}
 .mude-o-mundo{
   font-weight: 900;
   font-size: 40px;
@@ -163,7 +172,8 @@ body{
   font-weight: 700;
   font-size: 32px;
   line-height: 37.57px;
-  letter-spacing: 19%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
   text-align: center;
   text-justify: center;
   color: #33A8DB;
