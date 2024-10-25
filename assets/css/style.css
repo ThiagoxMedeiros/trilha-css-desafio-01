@@ -139,7 +139,7 @@ header{
   color: #33A8DB;
 }
 #transform-world{
-  background-image: url(/assets/images/woman-code.png);
+  background-image: url(../images/woman-code.png);
   background-size:cover ;
   background-attachment: fixed;
   height: 363px;
