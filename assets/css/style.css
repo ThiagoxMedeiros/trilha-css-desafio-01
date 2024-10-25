@@ -145,10 +145,10 @@ header{
   height: 363px;
   margin-top: 90px;
   margin-bottom:76px;
-  border-top: 1px ;
-  border-bottom: 1px;
-  border-style: solid; 
-  border-color: hsla(198, 70%, 53%, 1);
+  border-top: 1px solid hsla(198, 70%, 53%, 1);
+  border-bottom: 1px solid hsla(198, 70%, 53%, 1);
+
+  
 }
 #transform-world p{
   width: 244px;
